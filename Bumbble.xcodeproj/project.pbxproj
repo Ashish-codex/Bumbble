@@ -19,6 +19,11 @@
 		7512E02C2CC0F017000C5620 /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E02B2CC0F017000C5620 /* ModelUser.swift */; };
 		7512E02F2CC115A4000C5620 /* BumbleHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E02E2CC115A4000C5620 /* BumbleHomeView.swift */; };
 		7594D3702D0AEA3600452FF2 /* BumbleFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594D36F2D0AEA3600452FF2 /* BumbleFilterView.swift */; };
+		75D59B502DFE989B0076FFFE /* BumbleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D59B4F2DFE989B0076FFFE /* BumbleCardView.swift */; };
+		75D59B522DFECD550076FFFE /* BumbbleHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D59B512DFECD550076FFFE /* BumbbleHeartView.swift */; };
+		75D59B552DFED49D0076FFFE /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 75D59B542DFED49D0076FFFE /* SwiftfulUI */; };
+		75D59B572DFEDD5F0076FFFE /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D59B562DFEDD5F0076FFFE /* CapsuleView.swift */; };
+		75D59B592DFEE3620076FFFE /* CapsuleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D59B582DFEE3620076FFFE /* CapsuleGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,10 @@
 		7512E02B2CC0F017000C5620 /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
 		7512E02E2CC115A4000C5620 /* BumbleHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleHomeView.swift; sourceTree = "<group>"; };
 		7594D36F2D0AEA3600452FF2 /* BumbleFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleFilterView.swift; sourceTree = "<group>"; };
+		75D59B4F2DFE989B0076FFFE /* BumbleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleCardView.swift; sourceTree = "<group>"; };
+		75D59B512DFECD550076FFFE /* BumbbleHeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbbleHeartView.swift; sourceTree = "<group>"; };
+		75D59B562DFEDD5F0076FFFE /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
+		75D59B582DFEE3620076FFFE /* CapsuleGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D59B552DFED49D0076FFFE /* SwiftfulUI in Frameworks */,
 				7512E0262CC0EDFE000C5620 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,10 +110,22 @@
 		7512E02D2CC1158C000C5620 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				75D59B4E2DFE98810076FFFE /* Components */,
 				7512E02E2CC115A4000C5620 /* BumbleHomeView.swift */,
-				7594D36F2D0AEA3600452FF2 /* BumbleFilterView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		75D59B4E2DFE98810076FFFE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7594D36F2D0AEA3600452FF2 /* BumbleFilterView.swift */,
+				75D59B4F2DFE989B0076FFFE /* BumbleCardView.swift */,
+				75D59B512DFECD550076FFFE /* BumbbleHeartView.swift */,
+				75D59B562DFEDD5F0076FFFE /* CapsuleView.swift */,
+				75D59B582DFEE3620076FFFE /* CapsuleGridView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +146,7 @@
 			name = Bumbble;
 			packageProductDependencies = (
 				7512E0252CC0EDFE000C5620 /* SDWebImageSwiftUI */,
+				75D59B542DFED49D0076FFFE /* SwiftfulUI */,
 			);
 			productName = Bumbble;
 			productReference = 7512E00E2CC0EDC9000C5620 /* Bumbble.app */;
@@ -155,6 +178,7 @@
 			mainGroup = 7512E0052CC0EDC9000C5620;
 			packageReferences = (
 				7512E0242CC0EDFE000C5620 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				75D59B532DFED49D0076FFFE /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
 			);
 			productRefGroup = 7512E00F2CC0EDC9000C5620 /* Products */;
 			projectDirPath = "";
@@ -182,15 +206,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D59B572DFEDD5F0076FFFE /* CapsuleView.swift in Sources */,
 				7512E0142CC0EDC9000C5620 /* ContentView.swift in Sources */,
 				7512E02A2CC0EF10000C5620 /* ModelProduct.swift in Sources */,
 				7512E02F2CC115A4000C5620 /* BumbleHomeView.swift in Sources */,
+				75D59B502DFE989B0076FFFE /* BumbleCardView.swift in Sources */,
 				7512E0232CC0EDE3000C5620 /* ImageLoaderView.swift in Sources */,
+				75D59B592DFEE3620076FFFE /* CapsuleGridView.swift in Sources */,
 				7512E0282CC0EE31000C5620 /* Helper.swift in Sources */,
 				7512E0122CC0EDC9000C5620 /* BumbbleApp.swift in Sources */,
 				7512E0222CC0EDE3000C5620 /* Constant.swift in Sources */,
 				7512E02C2CC0F017000C5620 /* ModelUser.swift in Sources */,
 				7594D3702D0AEA3600452FF2 /* BumbleFilterView.swift in Sources */,
+				75D59B522DFECD550076FFFE /* BumbbleHeartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +434,14 @@
 				minimumVersion = 3.1.2;
 			};
 		};
+		75D59B532DFED49D0076FFFE /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -413,6 +449,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7512E0242CC0EDFE000C5620 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		75D59B542DFED49D0076FFFE /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75D59B532DFED49D0076FFFE /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
